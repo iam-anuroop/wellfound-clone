@@ -1,0 +1,85 @@
+*{
+    padding: 0px;
+    border: 0px;
+    margin: 0px;
+}
+body{
+    padding: 0px;
+    border: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.firstimg{
+    width: 108px;
+    height: 28px;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0px 20px 0px;
+}
+.navdiv{
+    padding: 0px 108px 0px 108px;
+}
+.signup{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 40px;
+}
+.signup li{
+    height: 22px;
+    display: flex;
+    align-items: center;
+}
+.signup>li:hover{
+    border-bottom: 2px solid blue;
+    color: blue;
+}
+.up{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+button{
+    width: 70px;
+    height: 35px;
+    border-radius: 5px;
+}
+.btn1{
+    background-color: transparent;
+    border: 1px solid black;
+}
+.btn1:hover{
+    background-color: rgba(12, 12, 225,0.1);
+    border: 1px solid blue;
+}
+.btn2{
+    background-color: black;
+    color: white;
+    border: 0px;
+}
+.btn2:hover{
+    background-color: blue;
+}
+.mainimg{
+    width: 590px;
+    height: 550px;
+}
+.main{
+    display: flex;
+    height: 725px;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.btext{
+    margin-bottom: 30px;
+    font-size: 50px;
+    font-weight: bold;
+}
+.stext{
+    font-size: 18px;
+}
