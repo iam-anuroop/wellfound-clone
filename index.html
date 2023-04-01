@@ -24,15 +24,45 @@
                 <li><button class="btn2">Sign Up</button></li>
             </ul>
         </ul>
+        <div class="hum" onclick="hum_animation(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
     </nav>
     </div>
     <div class="main">
+        <div class="pop">
+            <ul class="sup">
+                <li class="li">Discover</li>
+                <li class="li">For job seekers</li>
+                <li class="li">For companies</li>
+                <ul class="btn">
+                    <li class="li1"><button class="btnx">Login</button> </li>
+                    <li class="li2"><button class="btny">Sign Up</button></li>
+                </ul>
+            </ul>
+        </div>
         <div class="text">
             <p class="btext">Jobs you can't find<br>anywhere else, at<br>startups you won't<br>hear about anywhere<br>else.</p>
             <p class="stext">Browse over 130k remote & local jobs at the worlds most<br>innovative startups - from seed stage to post-IPO.</p>
         </div>
         <img class="mainimg" src="img's/wflogo.png" alt="img">
     </div>
+
+    <script>
+        function hum_animation(menu){
+            menu.classList.toggle('open');
+
+           var x= document.getElementsByClassName('pop')[0];
+           if(x.style.display=="block"){
+            document.getElementsByClassName('pop')[0].style.display="none";
+           }
+           else{
+            document.getElementsByClassName('pop')[0].style.display="block";
+           }
+        }
+    </script>
     
 </body>
 </html>
