@@ -18,9 +18,10 @@ body{
     justify-content: space-between;
     align-items: center;
     padding: 40px 0px 20px 0px;
+    
 }
 .navdiv{
-    padding: 0px 108px 0px 108px;
+    padding: 0px 9% 0px 9%;
 }
 .signup{
     display: flex;
@@ -42,12 +43,12 @@ body{
     list-style: none;
     gap: 20px;
 }
-button{
+.btn1,.btn2{
     width: 70px;
     height: 35px;
     border-radius: 5px;
 }
-.btn1{
+.btn1,.btnx{
     background-color: transparent;
     border: 1px solid black;
 }
@@ -55,12 +56,20 @@ button{
     background-color: rgba(12, 12, 225,0.1);
     border: 1px solid blue;
 }
-.btn2{
+.btnx:hover{
+    background-color: rgba(12, 12, 225,0.1);
+    border: 1px solid blue;
+}
+
+.btn2,.btny{
     background-color: black;
     color: white;
     border: 0px;
 }
 .btn2:hover{
+    background-color: blue;
+}
+.btny:hover{
     background-color: blue;
 }
 .mainimg{
@@ -73,13 +82,123 @@ button{
     align-items: center;
     justify-content: center;
     gap: 50px;
+    overflow: hidden;
+}
+.text{
+    overflow: hidden;
 }
 
 .btext{
     margin-bottom: 30px;
     font-size: 50px;
     font-weight: bold;
+
 }
 .stext{
     font-size: 18px;
+}
+.hum{
+    position: relative;
+    display: none;
+    gap: 3px;
+}
+.hum div{
+    width: 30px;
+    height: 3px;
+    background-color: black;
+}
+.open .bar1{
+    transform: rotate(-45deg) translate(-11px,2px);
+    transition-duration: 0.5s;
+}
+.open .bar2{
+    opacity: 0;
+}
+.open .bar3{
+    transform: rotate(45deg) translate(-7px,2px);
+    transition-duration: 0.5s;
+
+}
+.pop{
+    display:none;
+    background-color: white;
+    position: absolute;
+    top:100px;
+    width: 100%;
+    height: 100%;
+    
+    
+}
+.sup{
+    list-style: none;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.sup li{
+    padding: 5px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.btn {
+    display: flex;
+    position: relative;
+    width: 50px;
+}
+.btn li{
+    position: absolute;
+    
+}
+.li1{
+    position: absolute;
+}
+.li2{
+    position: absolute;
+    left: 90px;
+}
+.btnx,.btny{
+    width: 70px;
+    height: 35px;
+    border-radius: 5px;
+    margin-left: 50px;
+}
+.sup .li{
+    font-weight: bold;
+    width: 100%;
+    margin-left: 50px;
+}
+.sup .li:hover{
+    cursor: pointer;
+    color: blue;
+    background-color: rgba(57, 57, 236,0.2);
+}
+.btn:hover{
+    text-decoration: none;
+}
+
+
+@media(max-width:600px){
+    .nav ul{
+        display: none;
+    }
+    .hum{
+        display: flex;
+        flex-direction: column;
+    }
+    .mainimg{
+        display: none;
+    }
+    .text{
+        width: 50%;
+        overflow: visible;
+    }
+    .btext{
+        margin-bottom: 30px;
+        font-size: 30px;
+        font-weight: bold;
+    }
+
 }
